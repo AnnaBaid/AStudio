@@ -1,0 +1,56 @@
+.product {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 181px;
+    justify-content: space-between;
+
+    @include tablet {
+        align-items: stretch;
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+
+    &__video {
+        position: relative;
+        
+            img {
+                border-radius: 0px 0px 0px 200px;
+                position: relative;
+        
+                @include tablet {
+                    width: 100%;
+                    border-radius: 6px;
+                }
+            }
+        
+            &::before {
+                bottom: 5px;
+                right: 0;
+                position: absolute;
+                content: '';
+                display: block;
+                width: 129px;
+                height: 129px;
+                border-radius: 100px;
+                background: $orangebackgraund;
+        
+                @include tablet {
+                    display: none;
+                }
+            }
+    }
+
+    &__info {
+        max-width: 532px;
+        z-index: 2;
+    }
+
+    &__title {
+        @include text ($black, $ff-main, 40px, 400, 160%);
+    }
+
+    &__desc {
+        @include text ($dark, $ff-main, 16px, 400, 160%);
+    }
+}

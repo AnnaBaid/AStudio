@@ -1,0 +1,18 @@
+@import "reset";
+@import "fonts";
+@import "vars";
+@import "../mixins";
+@import "base";
+
+//blocks
+
+@import "../scss/components/btn";
+@import "../scss/blocks/header";
+@import "../scss/blocks/main-section";
+@import "../scss/blocks/client";
+@import "../scss/blocks/product";
+@import "../scss/blocks/newsletter";
+@import "../scss/blocks/footer";
+@import "../scss/blocks/user";
+@import "../scss/blocks/business"
+

@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+}
+
+.footer-info {
+
+    &__desc {
+        margin: 26px 191px 40px 0;
+        @include text ($dark, $ff-main, 14px, 400, 160%);
+        max-width: 270px;
+        @include desktop-small {
+            margin-right: 40px;
+        }
+    }
+
+    &__sosial {
+        display: flex;
+        gap: 16px;
+    }
+}
+
+.footer-do, .footer-company, .footer-support, .footer-contact {
+
+    &__title {
+        @include text ($black, $ff-main, 20px, 400, 160%);
+        margin-bottom: 24px;
+    }
+
+    &__ul {
+        display: block;
+        gap: 10px;
+    }
+
+    &__a {
+        @include text ($black, $ff-main, 14px, 400, 160%);        
+        margin-right: 110px;
+        @include tablet {
+            margin-right: 30px;
+        }
+    }
+}
+
